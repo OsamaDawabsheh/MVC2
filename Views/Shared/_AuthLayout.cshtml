@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Auth</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <header class="bg-dark p-2">
+        <nav class="d-flex gap-5 justify-content-center">
+            <a asp-controller="Users" asp-action="Register" class="btn btn-primary">Register</a>
+            <a asp-controller="Users" asp-action="NonActive" class="btn bg-transparent text-light px-3">Home</a>
+            <a asp-controller="Users" asp-action="Login" class="btn btn-primary">Login</a>
+        </nav>
+    </header>
+
+    <main class="d-flex flex-column mt-5 align-items-center">
+        
+            @RenderBody()
+    </main>
+
+
+</body>
+</html>
